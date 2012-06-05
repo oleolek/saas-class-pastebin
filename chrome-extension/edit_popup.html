@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <title>Edit Pastebin Links Popup</title>
+        <style>
+		#error {
+			color: red;
+		}
+		
+		.current_time {
+			background-color: #DCF6DB;
+		}
+		
+		#timeList thead {
+			width: 100%;
+		}
+		#timeList td {
+			padding: 5px 5px 5px 0;
+			vertical-align: top;
+		}
+		#timeList thead th {
+			padding-right: 10px;
+			text-align: left;
+		}
+</style>
+        <!-- JavaScript and HTML must be in separate files for security.
+        -->
+		<script src="popup.js"></script>
+        <script src="edit_popup.js"></script>
+    </head>
+    
+    <body>
+		<label for="title">Lecture:</label>
+        <label id="title">Placeholder for title</label> 
+        <!-- List of "time"->"pastebine codes" -->
+        <table id="timeList">			
+			<thead>
+				<th>Video Time</th>
+				<th>Pastebin Code</th>				
+			</thead>
+			
+		</table>
+		<div id="error"></div>
+		<!-- Input fields for edit -->
+        <table>
+			<tr>
+                <td>
+                    <label for="timeStart">Start:</label>
+                    <input type="text" id="timeStart" />
+                </td>
+				<td>
+                    <label for="timeEnd">End:</label>
+                    <input type="text" id="timeEnd" />
+                </td>               
+            </tr>
+            <tr>
+                <td>
+                    <label for="code">Pastebin code:</label>
+                    <input type="text" id="code" />
+                </td>
+            </tr>
+			<tr>
+				<td>
+                    <input id="saveTimeBtn" type="button" value="Save" />
+                </td>
+			</tr>
+        </table>
+    </body>
+
+</html>

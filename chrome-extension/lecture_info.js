@@ -1,17 +1,21 @@
 /*
 * Retrieve information from current page about lecture title and current time.
 */
+// listener to request on lecture info from current page
 chrome.extension.onConnect.addListener(function(port) {    
-  port.onMessage.addListener(function(msg) {	
-	console.log("Receiving request");
-	lecture_info = get_lecture_info();
-	if(lecture_info){
-		port.postMessage({lecture_info: lecture_info});
-	} else
-		alert("Page doesn't contain lecture video");
-	
+  port.onMessage.addListener(function(request) {
+	console.log("Receiving request:"+request.method);
+	if(request.method = "get_lecture_info"){		
+		lecture_info = get_lecture_info();
+		if(lecture_info){
+			port.postMessage({lecture_info: lecture_info});
+		} else
+			alert("Page doesn't contain lecture video");
+	}
   });
 });
+
+
 
 function get_lecture_info(){	
 

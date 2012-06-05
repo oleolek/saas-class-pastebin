@@ -14,7 +14,7 @@
     }
   ],  
   "browser_action": {
-      "default_title": "Open current pastbin in new tab.",
+      "default_title": "Open pastebin page with SaaS class code in new tab.",
       "default_icon": "icon.png"
   },
   "manifest_version": 2

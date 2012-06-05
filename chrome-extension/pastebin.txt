@@ -1,3 +1,1 @@
-{
-"3.8 - yield() (12:42)" : [{ "time":"01:45", "code":"T3JhV7Bk"}, {"time":"10:45", "code":"zQPh70NJ"}]
-}
+{"3.8 - yield() (12:42)":[{"start":"01:45","end":"10:45","code":"T3JhV7Bk"},{"start":"10:45","code":"zQPh70NJ"}],"3.10 - Databases and Migrations (8:19)":[{"start":"03:17","code":"VYwbc5fq"}],"3.11 - ActiveRecord Basics(20:10)":[{"start":"02:09","code":"ruu5y0D8"}],"3.12 - Controllers and Views(8:40)":[{"start":"02:57","code":"kZCB3uNj"}],"3.14 - Forms (10:13)":[{"start":"03:39","code":"k8Y49EhE"},{"start":"03:39","code":"3dGWsSq8"}],"3.16, 3.17, 3.18 - Finishing CRUD + Fallacies, pitfalls and perspectives on SaaS-on-Rails (8:25)":[{"start":"00:47","code":"VV8ekFcn"},{"start":"00:47","code":"0drjjxGa"}]} 

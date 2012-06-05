@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <title>Pastebin Links Popup</title>
+        <style>
+		body {
+			width: 220px;
+		}
+		
+		.current_time {
+			background-color: #DCF6DB;
+		}
+		
+		#timeList thead {
+			width: 100%;
+		}
+		#timeList td {
+			padding: 5px 5px 5px 0;
+			vertical-align: top;
+		}
+		#timeList thead th {
+			padding-right: 10px;
+			text-align: left;
+		}
+</style>
+        <!-- JavaScript and HTML must be in separate files for security.
+        -->
+        <script src="popup.js"></script>
+    </head>
+    
+    <body>
+		<label for="title">Lecture:</label>
+        <label id="title">Placeholder for title</label>   
+        <!-- List of "time"->"pastebine codes" -->
+        <table id="timeList">			
+			<thead>
+				<th>Video Time</th>
+				<th>Pastebin Code</th>				
+			</thead>
+			
+		</table>
+    </body>
+
+</html>
