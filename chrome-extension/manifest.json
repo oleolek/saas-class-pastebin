@@ -1,0 +1,21 @@
+{
+  "name": "saas-class-pastebin",
+  "version": "1.0",
+  "permissions": [
+    "background", "tabs", "http://*/*", "https://*/*"
+  ],
+   "background": {    
+	"page": "background.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["lecture_info.js"]
+    }
+  ],  
+  "browser_action": {
+      "default_title": "Open current pastbin in new tab.",
+      "default_icon": "icon.png"
+  },
+  "manifest_version": 2
+}
