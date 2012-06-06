@@ -43,6 +43,7 @@ function addTimeCode(title, start, end, code){
 
 // handle extension icon click
 function extensionClickHandler(tab) {
+	// edit mode for adding new time
     var editMode = false;
     if (!editMode) {
 		console.log("Showing popup");
@@ -75,19 +76,6 @@ function extensionClickHandler(tab) {
 		*/
 }
 
-function handleLectureInfo(response) {
-    console.log("Received response on lecture info");
-    console.log(response.lecture_info);
-    lecture_info = response.lecture_info;
-    pastebinLink = get_pastebin_link(lecture_info);
-
-    if (pastebinLink)
-    // create new tab
-    chrome.tabs.create({
-        url: pastebinLink
-    }, function callback() {});
-    else alert("Sorry this lecture is not supported yet");
-}
 
 // retrieve lecture info from current page using content script
 function getLectureInfo(tab, callback) {
@@ -135,33 +123,7 @@ function get_pastebin_codes(title, time){
 }
 
 
-function get_pastebin_link(lecture_info) {
-    pastebin_codes = data[lecture_info.title];
-    time = lecture_info.time;
-    if (pastebin_codes) {
-        pastebin_time = "00:00";
-        pastebin_code = null;
-        // find maximum pastebin time less than current time
-        for (var i = 0; i < pastebin_codes.length; i++) {
-            var pbc = pastebin_codes[i];
-            console.log("Try time:" + pbc["time"] + ", code:" + pbc["code"]);
-            if (pbc.time <= time && pbc.time > pastebin_time) {
-                pastebin_time = pbc.time;
-                pastebin_code = pbc.code;
-            }
-        }			
-		
-        // get first element if time is too earlier
-        if (pastebin_code == null && pastebin_codes.length > 0) {
-            pastebin_code = pastebin_codes[0].code;
-        }
 
-        if (pastebin_code) {
-            return "http://pastebin.com/" + pastebin_code;
-        }
-    }
-    return null;
-}
 
 // listener to request on lecture data (title, current_time, time->pastebin code) from current page
 chrome.extension.onConnect.addListener(function (port) {

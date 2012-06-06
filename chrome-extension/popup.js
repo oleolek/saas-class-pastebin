@@ -32,7 +32,11 @@ function populateTimeCodesList(lecture_data){
 	pastebin_codes = lecture_data.pastebin_codes;
 	var list = document.getElementById("timeList");
 	if(pastebin_codes) {
-		list.innerHTML = "<thead><th>Video Time</th><th>Pastebin Code</th></thead>";
+		if(pastebin_codes.length > 0){
+			list.innerHTML = "<thead><th>Video Time</th><th>Pastebin Code</th></thead>";
+		} else {
+			list.innerHTML = "No pastebin links for this video or lecture is not prepared yet.";
+		}
 		for(var i=0;i<pastebin_codes.length; i++){		
 			var pbc = pastebin_codes[i];			
 			var tr = document.createElement("tr");
@@ -51,7 +55,7 @@ function populateTimeCodesList(lecture_data){
 			
 			if(in_interval(lecture_data.lecture_info.time, pbc.start, pbc.end)){
 				tr.setAttribute("class", "current_time");
-			}
+			} else tr.setAttribute("class", "not_current_time");
 			
 			tr.appendChild(time);
 			tr.appendChild(code);

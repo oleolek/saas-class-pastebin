@@ -1,6 +1,6 @@
 {
   "name": "saas-class-pastebin",
-  "version": "1.0",
+  "version": "1.0.3.18",
   "permissions": [
     "background", "tabs", "http://*/*", "https://*/*"
   ],
@@ -14,8 +14,11 @@
     }
   ],  
   "browser_action": {
-      "default_title": "Open pastebin page with SaaS class code in new tab.",
-      "default_icon": "icon.png"
+      "default_title": "Shows links to pastebin code while watching lecture videos on saas-class.org",
+      "default_icon": "icon.png",
+	  "default_popup" : "popup.html"
   },
-  "manifest_version": 2
+  "manifest_version": 2,
+  
+  "update_url": "https://www.dropbox.com/s/9qniqawrq45vk6q/updates.xml"
 }
