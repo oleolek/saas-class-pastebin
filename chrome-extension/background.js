@@ -44,7 +44,7 @@ function addTimeCode(title, start, end, code){
 // handle extension icon click
 function extensionClickHandler(tab) {
 	// edit mode for adding new time
-    var editMode = false;
+    var editMode = true;
     if (!editMode) {
 		console.log("Showing popup");
         // change icon for user mode
