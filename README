@@ -8,9 +8,9 @@ If you don't want to retype each time link from video lectures to pastebin - sim
 Usage:
 	0. Install Google Chrome 
 	1. Download extension from Chrome Web Store (https://chrome.google.com/webstore/detail/ciagbgbgjojbdiknmgkhdaliooniokim) or checkout project from github and deploy extension manually (see http://code.google.com/chrome/extensions/getstarted.html 'Create and load an extension'#4 Load the extension).
-	3. Restart Chrome. This is important!
-	4. Open video lecture at some specific time on saas-class.org and click on extension icon. Table with "time -> pastebin code" or message that lecture doesn't have pastebin codes will pop-up.
-	5. Pastebin code that is used in video at current playing time will be with green background. Simply click on it and new tab will be opened. 
+	2. Restart Chrome. This is important!
+	3. Open video lecture at some specific time on saas-class.org and click on extension icon. Table with "time -> pastebin code" or message that lecture doesn't have pastebin codes will pop-up.
+	4. Pastebin code that is used in video at current playing time will be with green background. Simply click on it and new tab will be opened. 
 	
 Report any suggestions or issues on Chrome Web Store site or on github.
 
