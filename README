@@ -5,10 +5,18 @@ Google Chrome extension for saas-class.org that helps user following pastebin li
 If you don't want to retype each time link from video lectures to pastebin - simply click on extension icon any time during video and list with clickable links will be opened.
 
 
-Extension progress:
+Usage:
+	0. Install Google Chrome 
+	1. Download extension from Chrome Web Store (https://chrome.google.com/webstore/detail/ciagbgbgjojbdiknmgkhdaliooniokim) or checkout project and deploy extension manually (see http://code.google.com/chrome/extensions/getstarted.html 'Create and load an extension'#4 Load the extension).
+	2. Open video lecture at some specific time on saas-class.org and click on extension icon. Table with "time -> pastebin code" or message that lecture doesn't have pastebin codes will pop-up.
+	3. Pastebin code that is used in video at current playing time will be with green background. Simply click on it and new tab will be opened. 
+
+Report any suggestions or issues on Chrome Web Store site or on github.
+
+Change log:
 In this section progress on lecture videos will be covered.
 Added links to lectures:
-	05.06.2012: 3.8 - 3.19
+	06.06.2012: 3.1 - 3.19
 
 
 
