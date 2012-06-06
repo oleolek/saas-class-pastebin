@@ -2,7 +2,16 @@ saas-class-pastebin
 ==============
 Google Chrome extension for saas-class.org that helps user following pastebin links on video lecture in easy way.
 
-If you don't want to retype each time link from video lectures to pastebin - simply click on extension icon any time during video and list with links will be opened.
+If you don't want to retype each time link from video lectures to pastebin - simply click on extension icon any time during video and list with clickable links will be opened.
+
+
+Extension progress:
+In this section progress on lecture videos will be covered.
+Added links to lectures:
+	05.06.2012: 3.8 - 3.19
+
+
+
 
 Contact
 - Email: alex.sokols at gmail.com
