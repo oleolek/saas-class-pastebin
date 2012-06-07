@@ -15,7 +15,18 @@ chrome.extension.onConnect.addListener(function(port) {
   });
 });
 
+// retrieve lecture title from video frame
+function get_lecture_title(document){
+	var title =  document.getElementById("lecture_title").innerHTML;
+	// remove time from lecture title
+	var timeRegexp = /\s+\(\d?\d:\d\d\)/g;
+	return title.replace(timeRegexp, "");
+}
 
+// retrieve current video time
+function get_current_time(document){
+	return document.querySelector(".mejs-currenttime").innerHTML;
+}
 
 function get_lecture_info(){	
 
@@ -25,12 +36,12 @@ function get_lecture_info(){
 		var content = videoFrame.contentDocument;
 
 		// retrieve lecture title and current time
-		title = content.getElementById("lecture_title");
-		time = content.querySelector(".mejs-currenttime");
-		console.log("Title:"+title);
+		title = get_lecture_title(content);
+		time = get_current_time(content);
+		console.log("Title:'"+title+"'");
 		console.log("Time:"+time);
 		if(title && time){
-			return { title: title.innerHTML, time: time.innerHTML};
+			return { title: title, time: time};
 		}
 	}
 	return null		
