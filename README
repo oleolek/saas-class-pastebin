@@ -15,16 +15,21 @@ Usage:
 	
 Report any suggestions or issues on Chrome Web Store site or on github.
 
+FAQ:
+	http://soklog.blogspot.com/2012/06/saas-class-pastebin-faq.html
+
 
 Versioning:
-1.0.X.Y - where X is chapter index and Y is lecture number on saas-class.org.
+1.0.X.Y.Z - where X is chapter index and Y is lecture number on saas-class.org and Z is some minor fix.
 
 
 Change log:
 In this section progress on lecture videos will be covered.
 
 Added links to lectures:
-	06.06.2012: 3.1 - 3.19
+	06.06.2012: version 1.0.3.19  -- 3.1 - 3.19
+	08.06.2012: version 1.0.4.9   -- 4.1 - 4.6
+	09.06.2012: version 1.0.4.9.1 -- added missed link for lecture 3.11
 
 
 
