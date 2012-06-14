@@ -1,6 +1,6 @@
 {
   "name": "(edit mode) saas-class-pastebin",
-  "version": "1.0.3.19",
+  "version": "1.0.5.11",
   "permissions": [
     "background", "tabs", "http://*/*", "https://*/*", "unlimitedStorage"  
   ],
